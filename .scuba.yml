@@ -1,0 +1,11 @@
+image: matthewtingum/edk2-build:0.1
+
+volumes:
+  /edk2/HelloWorldPkg: /home/user/edk2-docker/HelloWorldPkg
+  /edk2/Build: /home/user/edk2-docker/Build
+  /edk2/Conf: /home/user/edk2-docker/Conf
+
+aliases:
+  build:
+    script:
+    - build -p HelloWorldPkg/HelloWorldPkg.dsc -t GCC5 -a X64 
