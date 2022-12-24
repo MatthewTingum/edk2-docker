@@ -9,7 +9,6 @@ If you want to get your toes wet with EFI, you have a few options:
     - If we're sticking with GNU, couldn't we have used mingw?
     - Presents tons of limitations with what objcopy can do
       - Useful patch submissions for the future, but why not use the tools we have?
-        - I don't feel like getting a letter from my employer, doing 10 cartwheels, washing Richard Stallman's feel, and going on a few side-quests at the moment
   - Trash codebase
     - Many occurences of return values not being checked and other low-hanging fruit
   - Lacks completeness
@@ -119,18 +118,9 @@ aliases:
     - build -p HelloWorldPkg/HelloWorldPkg.dsc -t GCC5 -a X64
 ```
 
-## Example usage TLDR
+### Building
 
-If you choose not to read the README and just want to build `HelloWorldPkg`
-and start hacking on that, this is the section you want to read.
-If you do not understand the edk2 framework you will find yourself in trouble
-when trying to do more advanced things.
-Good luck.
-
-**Change your paths in the .scuba.yml file.**
-There are paths that need to change that point to your filesystem.
-Try reading `README.md`...
-
+Run the command:
 ```sh
 scuba build
 ```
